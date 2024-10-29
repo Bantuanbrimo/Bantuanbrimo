@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRI Info</title>
+    <style>
+        /* Gaya CSS tetap sama */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://blogger.googleusercontent.com/img/a/AVvXsEiUiQ7BNPREBQUj8Q4xWmZ9jlRZo65RsRYFjpt6Q6VfALp01oJsZY-15FAVAebFPzq0IRLpfDXymMnc2nd2CjJphNrWFg1jOg2knyWT2hw3T8QB4xpuXL6xpZDOIYS9HBOosk8HYff6vKA9cY1d0BmgaR_sLLodMK-HqsolslLxIGZyBwayHU-A85H6') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 350px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5); /* Efek transparan untuk teks */
+            border-radius: 10px;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 70px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .menu {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: transparent;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 15px;
+            justify-content: space-between;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .menu-item img {
+            width: 25px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .ellipsis {
+            margin-left: auto;
+            font-size: 16px;
+            line-height: 1;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            margin-top: 5px;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #c9c9c9;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjGQ4fp9E41vZoXEDU8uFyamOlIifvGTeBP5dLHHeYNmMsT5iCSYGYCJJ3am0tArBV6zg-kgS3t9Pikg5y1uf5iwu0fqlNuYnrTUEzCBm89M0sB6nRwTJHvWqAHl9y5KukwsAdRc0yW8gv-hW_pR0rQAsVyapodqKozYOIg04lEH2EOQt6W2N4-9VuN" alt="BRI Logo" class="logo">
+            <h1>PT Bank Rakyat Indonesia</h1>
+            <p class="subtitle">Melayani Setulus hati</p>
+        </header>
+
+        <div class="menu">
+            <div class="menu-item" onclick="window.location.href='https://wa.me/6287820788149'">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjGQ4fp9E41vZoXEDU8uFyamOlIifvGTeBP5dLHHeYNmMsT5iCSYGYCJJ3am0tArBV6zg-kgS3t9Pikg5y1uf5iwu0fqlNuYnrTUEzCBm89M0sB6nRwTJHvWqAHl9y5KukwsAdRc0yW8gv-hW_pR0rQAsVyapodqKozYOIg04lEH2EOQt6W2N4-9VuN" alt="Lupa Password" class="icon">
+                <span>Lupa Password BRImo</span>
+                <span class="ellipsis">•••</span>
+            </div>
+            
+            <div class="menu-item" onclick="window.location.href='https://wa.me/6287820788149'">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj_Yb4ly6lw439cfGnF5td0G-3jCW0HOJw1SvS3NS9CSXygtCYt2Ml4fqUn6I6Ba9xE8zHdLgNW_Jof5j3L2BUy4JvthOYIxenBwWAYVZ63rNluXlBZh2p2rgPuONR8K71JuLxomkEuqhlqgZo_aQbhPq7pUNJc9Lf-KcauTLj0JgoY8Q-U-HsbZIrH" alt="Buka Blokir" class="icon">
+                <span>Bantuan Buka Blokir BRImo</span>
+                <span class="ellipsis">•••</span>
+            </div>
+            
+            <div class="menu-item" onclick="window.location.href='https://wa.me/6287820788149'">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhVbFm9_nTb0WGMK4K51fucYdtRDZaXjvtYsxOYyUsqCpL_pr6PXp6pKwGIRJvCgiWQgWfWLzWU2J2M84t3I5ejBpt1pmWax4bv0EoIwRLxtrp3wwPiUpFwGh6IrdPCyBd2PzjJhJko0s3lP22DUZJq0SV3L5rVmDyg8fdEpPoIwpHSR656qacCm7yt" alt="CS Bantuan" class="icon">
+                <span>Hubungi Cs Bantuan BRImo</span>
+                <span class="ellipsis">•••</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
